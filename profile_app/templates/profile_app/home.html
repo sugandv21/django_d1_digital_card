@@ -1,0 +1,15 @@
+{% extends "profile_app/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="card mx-auto mt-5 p-4 text-center" style="width: 22rem;">
+  <img src="{% static image %}" class="card-img-top rounded-circle" alt="Profile Image">
+  <div class="card-body">
+    <h3>{{ name }}</h3>
+    <h5>{{ title }}</h5>
+    <p>Email: {{ email }}</p>
+    <p>Phone: {{ phone }}</p>
+  </div>
+</div>
+{% endblock %}
